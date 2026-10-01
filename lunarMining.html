@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portefólio Web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="css\main.css" , rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+  </head>
+
+  <body class="custom-body">
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand brand-box" href="about.html">Tiago Dias</a>
+
+        <!-- Botão Toggler para dispositivos móveis -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="this.classList.toggle('change')"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+
+        <!-- PARA DESKTOP -->
+        <div
+          class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+            <!-- Botão HOME -->
+            <li class="nav-item">
+              <a
+                class="nav-link custom-link"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <!-- Botão ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link custom-link" href="about.html">About</a>
+            </li>
+
+            <!-- Botão SKILLS -->
+            <li class="nav-item">
+              <a class="nav-link custom-link" href="skills.html">Skills</a>
+            </li>
+
+            <!-- Botão PROJECTS em DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle custom-active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="projects.html">All Projects</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="3dCharacter.html"
+                    >3D Character</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="carRace.html">CarRace</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Lunar Mining</a></li>
+              </ul>
+            </li>
+
+            <!-- Botão CONTACT ME -->
+            <li class="nav-item">
+              <a class="nav-link custom-link" href="contactMe.html"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+
+          <div class="lang-dropdown-wrapper ms-lg-0">
+            <div class="dropdown">
+              <!-- Botão principal com a bandeira da língua ATUAL (exemplo para Inglês) -->
+              <a
+                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 d-flex align-items-center gap-1"
+                href="#"
+                id="langSelector"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="fi fi-gb"></span>
+                <span class="small fw-bold">EN</span>
+              </a>
+
+              <!-- Opções do Menu -->
+              <ul
+                class="dropdown-menu dropdown-menu-end bg-black border-success mt-2"
+                aria-labelledby="langSelector"
+              >
+                <li>
+                  <a
+                    class="dropdown-item text-white active-lang d-flex align-items-center gap-2"
+                    href="#"
+                  >
+                    <span class="fi fi-gb"></span> English (EN)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-white d-flex align-items-center gap-2"
+                    href="pt/lunarMining.html"
+                  >
+                    <span class="fi fi-pt"></span> Português (PT)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECÇÃO DO CONTEUDO -->
+    <section id="character" class="character-section">
+      <div class="character-content-wrapper text-center">
+        <!-- Cabeçalho da Secção -->
+        <h2 class="character-title fw-bold">Lunar Mining</h2>
+        <p class="character-subtitle fst-italic">Made in Java</p>
+
+        <a
+          href="#top"
+          class="divider-container my-4 d-flex align-items-center justify-content-center top-divider"
+          aria-label="Voltar ao topo"
+        >
+          <span class="green-line"></span>
+
+          <span class="top-btn mx-2 text-success">
+            <i class="fa-brands fa-java"></i>
+          </span>
+
+          <span class="green-line"></span>
+        </a>
+
+        <div class="row align-items-center g-4">
+          <!-- Coluna Esquerda: Caixa de Progress Bars com Borda Verde -->
+          <div class="col-12 col-md-6">
+            <div class="carousel-wrapper">
+              <div
+                id="carouselExample"
+                class="carousel slide custom-carousel mx-auto"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-text="Starting Screen">
+                    <img
+                      src="images/jogoMOP.png"
+                      class="d-block w-100"
+                      alt="Jogo feito em Java"
+                    />
+                  </div>
+                  <div class="carousel-item" data-text="Main Menu">
+                    <img
+                      src="images/main_menu.png"
+                      class="d-block w-100"
+                      alt="Main Menu"
+                    />
+                  </div>
+                  <div class="carousel-item" data-text="Mining Satuts">
+                    <img
+                      src="images/mining_status.png"
+                      class="d-block w-100"
+                      alt="Mining Satuts"
+                    />
+                  </div>
+                  <div class="carousel-item" data-text="Mining History">
+                    <img
+                      src="images/mining_history.png"
+                      class="d-block w-100"
+                      alt="Mining History"
+                    />
+                  </div>
+                </div>
+                <!-- Botões de navegação do carousel -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Texto sobre a imagem -->
+            <div class="text-center mb-5">
+              <h3 id="carousel-external-text" class="text-black fw-bold">
+                Starting Screen
+              </h3>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Texto e Botão Download Resume -->
+          <div class="col-12 col-md-6 text-center text-md-start ps-md-4">
+            <h3 class="character-heading mb-4">
+              Lunar Mining is a Java-based resource management simulation that
+              puts players in command of an off-world mining enterprise.
+              Beginning at the starting screen, players navigate a comprehensive
+              dashboard to build rovers, manage battery levels, and schedule
+              cargo shipments. The gameplay loop features active resource
+              extraction with real-time timers and yield projections, backed by
+              an in-depth financial ledger tracking overall profit, active
+              balance, and fleet analytics.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPE -->
+    <footer class="bottom-bar">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <div class="social-icons-bottom">
+          <a href="https://github.com/Tiago-P-Dias"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="rights-text">© 2026 Copyright : Tiago Dias</div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT BOOTSTRAP NÃO MEXER -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SCRIPT SIMBOLOS NÃO MEXER -->
+    <script
+      src="https://kit.fontawesome.com/d7149b75da.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SCRIPT MUDANÇA DE TEXTO DAS IMAGENS NÃO MEXER -->
+    <script>
+      const carouselElement = document.getElementById("carouselExample");
+      const externalText = document.getElementById("carousel-external-text");
+
+      // Evento acionado quando o carrossel muda de slide
+      carouselElement.addEventListener("slide.bs.carousel", function (event) {
+        // Obtém o elemento que vai ficar ativo
+        const nextSlide = event.relatedTarget;
+        // Obtém o texto do atributo data-text desse slide
+        const newText = nextSlide.getAttribute("data-text");
+
+        // Atualiza o texto fora do carrossel
+        if (newText && externalText) {
+          externalText.textContent = newText;
+        }
+      });
+    </script>
+  </body>
+</html>

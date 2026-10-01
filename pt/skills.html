@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portefólio Web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="../css/main.css" , rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+  </head>
+
+  <body class="custom-body">
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand brand-box" href="about.html">Tiago Dias</a>
+
+        <!-- Botão Toggler para dispositivos móveis -->
+        <button
+          class="navbar-toggler custom-toggler d-lg-none ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+          onclick="this.classList.toggle('change')"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+
+        <!-- PARA DESKTOP -->
+        <div
+          class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+            <!-- Botão HOME -->
+            <li class="nav-item">
+              <a
+                class="nav-link custom-link"
+                aria-current="page"
+                href="index.html"
+                >Início</a
+              >
+            </li>
+
+            <!-- Botão ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link custom-link" href="about.html">Sobre</a>
+            </li>
+
+            <!-- Botão SKILLS -->
+            <li class="nav-item">
+              <a class="nav-link custom-active" href="#">Competências</a>
+            </li>
+
+            <!-- Botão PROJECTS em DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle custom-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projetos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="projects.html">Todos os projetos</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="3dCharacter.html"
+                    >Personagem 3D</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="carRace.html">CarRace</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lunarMining.html"
+                    >Lunar Mining</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Botão CONTACTA-ME -->
+            <li class="nav-item">
+              <a class="nav-link custom-link" href="contactMe.html"
+                >Contacta-me</a
+              >
+            </li>
+          </ul>
+
+          <div class="lang-dropdown-wrapper ms-lg-0">
+            <div class="dropdown">
+              <!-- Botão principal com a bandeira da língua ATUAL (exemplo para Inglês) -->
+              <a
+                class="btn btn-link text-white text-decoration-none dropdown-toggle p-0 d-flex align-items-center gap-1"
+                href="#"
+                id="langSelector"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="fi fi-pt"></span>
+                <span class="small fw-bold">PT</span>
+              </a>
+
+              <!-- Opções do Menu -->
+              <ul
+                class="dropdown-menu dropdown-menu-end bg-black border-success mt-2"
+                aria-labelledby="langSelector"
+              >
+                <li>
+                  <a
+                    class="dropdown-item text-white active-lang d-flex align-items-center gap-2"
+                    href="#"
+                  >
+                    <span class="fi fi-pt"></span> Português (PT)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-white d-flex align-items-center gap-2"
+                    href="../skills.html"
+                  >
+                    <span class="fi fi-gb"></span> English (EN)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECÇÃO DAS MINHAS COMPETÊNCIAS -->
+    <section id="skills" class="skills-section py-5">
+      <div class="container text-center">
+        <!-- Título e Subtítulo -->
+        <h2 class="skills-title text-uppercase">AS MINHAS COMPETÊNCIAS</h2>
+        <p class="skills-subtitle italic">Multimédia e aprendizagem automática</p>
+
+        <!-- Divisória Verde com Botão "Ir para o Topo" -->
+        <a
+          href="#top"
+          class="divider-container my-4 d-flex align-items-center justify-content-center top-divider"
+          aria-label="Voltar ao topo"
+        >
+          <span class="green-line"></span>
+
+          <span class="top-btn mx-2 text-success">
+            <i class="fa-solid fa-check"></i>
+          </span>
+
+          <span class="green-line"></span>
+        </a>
+
+        <!-- Grelha de Skills -->
+        <div class="row g-4 mt-2 justify-content-center">
+          <!-- Competência 1: WEB -->
+          <div class="col-12 col-lg-6">
+            <div class="skill-card d-flex align-items-center">
+              <div
+                class="polygon-shape d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-brands fa-html5 skill-icon"></i>
+              </div>
+              <div class="skill-info text-start ms-4">
+                <h4 class="skill-heading">WEB</h4>
+                <p class="skill-desc">
+                  Desenvolvimento de competências fundamentais para a web, com
+                  foco em HTML5 estruturado, sistemas de layout CSS3
+                  responsivos e programação JavaScript essencial. Experiência
+                  prática na criação de interfaces limpas e fáceis de utilizar,
+                  na aplicação de princípios modernos de design responsivo e na
+                  estruturação de aplicações web do lado do cliente.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Competência 2: MOBILE -->
+          <div class="col-12 col-lg-6">
+            <div class="skill-card d-flex align-items-center">
+              <div
+                class="polygon-shape d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
+              </div>
+              <div class="skill-info text-start ms-4">
+                <h4 class="skill-heading">MOBILE</h4>
+                <p class="skill-desc">
+                  Foco na compreensão de estratégias de design
+                  multiplataforma, na adaptação do layout a dispositivos móveis
+                  e nos conceitos arquiteturais básicos necessários para criar
+                  interfaces acessíveis de aplicações móveis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Competência 3: MULTIMÉDIA -->
+          <div class="col-12 col-lg-6">
+            <div class="skill-card d-flex align-items-center">
+              <div
+                class="polygon-shape d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-photo-film skill-icon"></i>
+              </div>
+              <div class="skill-info text-start ms-4">
+                <h4 class="skill-heading">MULTIMEDIA</h4>
+                <p class="skill-desc">
+                  Aquisição de competências essenciais em conceitos de meios
+                  digitais, incluindo estruturas de sinal audiovisual,
+                  manipulação básica de imagem e processamento de gráficos
+                  vetoriais. Desenvolvimento da compreensão de sistemas de
+                  meios interativos, integração de fluxos de conteúdos digitais
+                  e técnicas de apresentação multimédia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Competência 4: APRENDIZAGEM AUTOMÁTICA -->
+          <div class="col-12 col-lg-6">
+            <div class="skill-card d-flex align-items-center">
+              <div
+                class="polygon-shape d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-globe skill-icon"></i>
+              </div>
+              <div class="skill-info text-start ms-4">
+                <h4 class="skill-heading">APRENDIZAGEM AUTOMÁTICA</h4>
+                <p class="skill-desc">
+                  Introdução a conceitos fundamentais de análise de dados,
+                  algoritmos e resolução lógica de problemas. Construção de uma
+                  base em princípios matemáticos e conceitos introdutórios de
+                  aprendizagem automática aplicados a dados multimédia e à
+                  recuperação automatizada de informação.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPE -->
+    <footer class="bottom-bar">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <div class="social-icons-bottom">
+          <a href="https://github.com/Tiago-P-Dias"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="#"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="rights-text">© 2026 Direitos de autor: Tiago Dias</div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT BOOTSTRAP NÃO MEXER -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SCRIPT SIMBOLOS NÃO MEXER -->
+    <script
+      src="https://kit.fontawesome.com/d7149b75da.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
