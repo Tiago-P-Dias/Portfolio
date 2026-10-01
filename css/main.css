@@ -110,16 +110,18 @@ body {
 
 .custom-toggler.navbar-toggler {
   margin-left: auto !important;
-  border: 3px solid green !important; /* Borda verde com 3px de espessura */
+  border: 3px solid green !important;
   border-radius: 4px;
-  padding: 6px 8px;
+  padding: 0;
   cursor: pointer;
   box-shadow: none !important;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 42px;
-  height: 38px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 40px;
 }
 
 .custom-toggler .bar1,
@@ -128,8 +130,9 @@ body {
   width: 23px;
   height: 2px;
   background-color: #2a9134 !important;
-  margin: 5px;
-  transition: all 0.5s ease; /* Animação suave para fechar em 'X' */
+  margin: 0;
+  flex: 0 0 2px;
+  transition: all 0.5s ease;
 }
 
 .custom-toggler.change .bar1 {
@@ -917,6 +920,6 @@ body {
 
 @media (min-width: 1020px) {
   html {
-    zoom: 0.90;
+    zoom: 0.9;
   }
 }
