@@ -44,10 +44,7 @@ body {
   font-size: 1.1rem;
   position: static;
   margin-top: auto;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  z-index: 1000;
 }
 
 .social-icons-bottom a {
@@ -111,7 +108,7 @@ body {
   padding: 6px 16px !important;
 }
 
-.custom-toggler .navbar-toggler {
+.custom-toggler.navbar-toggler {
   margin-left: auto !important;
   border: 3px solid green !important; /* Borda verde com 3px de espessura */
   border-radius: 4px;
@@ -147,11 +144,6 @@ body {
   transform: rotate(45deg) translate(-5px, -8px);
 }
 
-.custom-toggler .navbar-toggler-icon {
-  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
-    brightness(118%) contrast(119%) !important;
-}
-
 .custom-toggler.navbar-toggler:focus,
 .custom-toggler.navbar-toggler:hover {
   border-color: green !important;
@@ -178,6 +170,182 @@ body {
 .dropdown-menu .dropdown-item:hover {
   background-color: darkgreen !important;
   color: white !important;
+}
+
+/* HOME */
+
+.home-main {
+  padding-bottom: 0;
+}
+
+.home-hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 70px max(24px, 8vw);
+  color: white;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.7) 46%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url("../images/boneco_MAV.png") no-repeat 75% center / cover;
+}
+
+.home-hero-content {
+  max-width: 650px;
+}
+
+.home-eyebrow {
+  margin: 0 0 12px;
+  color: #31c44a;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.home-hero h1,
+.section-heading h2 {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.home-hero h1 {
+  font-size: clamp(2.8rem, 7vw, 3.5rem);
+}
+
+.home-intro {
+  max-width: 520px;
+  margin: 20px 0 30px;
+  font-size: 1.2rem;
+  line-height: 1.55;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.home-button,
+.project-link {
+  display: inline-block;
+  padding: 11px 18px;
+  border: 2px solid #31c44a;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.home-button-primary,
+.project-link {
+  background-color: #168329;
+}
+
+.home-button:hover,
+.project-link:hover {
+  background-color: #31c44a;
+  color: black;
+}
+
+.featured-projects {
+  padding: 65px 20px 44px;
+}
+
+.section-heading {
+  max-width: 620px;
+  margin: 0 auto 18px;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+.section-heading > p:last-child {
+  margin: 10px 0 0;
+  color: #555;
+}
+
+.featured-projects .carousel-wrapper {
+  margin: 24px auto 20px;
+}
+
+.project-summary {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.project-summary h3 {
+  margin: 0;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.project-summary p {
+  margin: 8px auto 18px;
+  color: #555;
+}
+
+.technology-strip {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0 auto;
+  padding: 22px 20px;
+  background-color: black;
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.technology-strip div {
+  padding: 0 20px;
+  border-right: 1px solid #31c44a;
+}
+
+.technology-strip div:last-child {
+  border-right: 0;
+}
+
+.lang-dropdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.lang-dropdown-wrapper .dropdown-menu {
+  min-width: 150px;
+  background-color: #000000 !important;
+  border: 1px solid #008000 !important; /* Borda verde condizente com o tema */
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lang-dropdown-wrapper .dropdown-item {
+  color: #ffffff !important;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  transition: background-color 0.2s ease;
+}
+
+.lang-dropdown-wrapper .dropdown-item:hover {
+  background-color: #008000 !important;
+  color: #ffffff !important;
+}
+
+.lang-dropdown-wrapper .dropdown-item.active-lang {
+  color: #00e600 !important;
+  font-weight: bold;
 }
 
 /* CAROUSEL NÃO MEXER MAIS */
@@ -539,11 +707,6 @@ body {
   font-size: 0.95rem;
 }
 
-.divider-container {
-  max-width: 250px;
-  margin: 0 auto;
-}
-
 .character-heading {
   font-size: 1.25rem;
   letter-spacing: 1px;
@@ -551,16 +714,6 @@ body {
   text-align: center;
   align-items: center;
   margin-bottom: 8px;
-}
-
-.character-desc {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 20px;
-  display: block;
-  color: #222222 !important;
 }
 
 .character-carousel .carousel-control-prev-icon,
@@ -726,25 +879,11 @@ body {
     font-size: 15px;
   }
 
-  .carousel-img {
-    height: 350px;
-  }
-
   .character-carousel:has(.carousel-item:nth-child(3).active)
     .carousel-control-prev-icon,
   .character-carousel:has(.carousel-item:nth-child(3).active)
     .carousel-control-next-icon {
     filter: none !important;
-  }
-
-  .divider-container {
-    position: sticky !important;
-    top: 10px !important; /* Distância do topo do ecrã */
-    z-index: 1000 !important; /* Garante que fica por cima do conteúdo ao fazer scroll */
-    background-color: white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    padding: 8px 15px !important;
-    border-radius: 20px;
   }
 
   .polygon-shape {
@@ -780,187 +919,4 @@ body {
   html {
     zoom: 0.90;
   }
-}
-
-/* HOME */
-
-.home-main {
-  padding-bottom: 0;
-}
-
-.home-hero {
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  padding: 70px max(24px, 8vw);
-  color: white;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.92) 0%,
-      rgba(0, 0, 0, 0.7) 46%,
-      rgba(0, 0, 0, 0.15) 100%
-    ),
-    url("../images/boneco_MAV.png") no-repeat 75% center / cover;
-}
-
-.home-hero-content {
-  max-width: 650px;
-}
-
-.home-eyebrow {
-  margin: 0 0 12px;
-  color: #31c44a;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.home-hero h1,
-.section-heading h2 {
-  margin: 0;
-  font-weight: 500;
-  letter-spacing: 0;
-}
-
-.home-hero h1 {
-  font-size: clamp(2.8rem, 7vw, 3.5rem);
-}
-
-.home-intro {
-  max-width: 520px;
-  margin: 20px 0 30px;
-  font-size: 1.2rem;
-  line-height: 1.55;
-}
-
-.home-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.home-button,
-.project-link {
-  display: inline-block;
-  padding: 11px 18px;
-  border: 2px solid #31c44a;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
-}
-
-.home-button-primary,
-.project-link {
-  background-color: #168329;
-}
-
-.home-button:hover,
-.project-link:hover {
-  background-color: #31c44a;
-  color: black;
-}
-
-.featured-projects {
-  padding: 65px 20px 44px;
-}
-
-.section-heading {
-  max-width: 620px;
-  margin: 0 auto 18px;
-}
-
-.section-heading h2 {
-  font-size: 2rem;
-  color: black;
-}
-
-.section-heading > p:last-child {
-  margin: 10px 0 0;
-  color: #555;
-}
-
-.featured-projects .carousel-wrapper {
-  margin: 24px auto 20px;
-}
-
-.project-summary {
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-.project-summary h3 {
-  margin: 0;
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 800;
-}
-
-.project-summary p {
-  margin: 8px auto 18px;
-  color: #555;
-}
-
-.technology-strip {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0;
-  margin: 0 auto;
-  padding: 22px 20px;
-  background-color: black;
-  color: white;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.technology-strip div {
-  padding: 0 20px;
-  border-right: 1px solid #31c44a;
-}
-
-.technology-strip div:last-child {
-  border-right: 0;
-}
-
-.home-footer {
-  position: static;
-  margin-top: auto;
-}
-
-.lang-dropdown-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-/* Customização do Menu Dropdown de Idiomas */
-.lang-dropdown-wrapper .dropdown-menu {
-  min-width: 150px;
-  background-color: #000000 !important;
-  border: 1px solid #008000 !important; /* Borda verde condizente com o tema */
-  border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.lang-dropdown-wrapper .dropdown-item {
-  color: #ffffff !important;
-  font-size: 0.9rem;
-  padding: 6px 12px;
-  transition: background-color 0.2s ease;
-}
-
-/* Hover e estado ativo */
-.lang-dropdown-wrapper .dropdown-item:hover {
-  background-color: #008000 !important;
-  color: #ffffff !important;
-}
-
-.lang-dropdown-wrapper .dropdown-item.active-lang {
-  color: #00e600 !important;
-  font-weight: bold;
 }
