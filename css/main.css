@@ -191,7 +191,7 @@ body {
       rgba(0, 0, 0, 0.7) 46%,
       rgba(0, 0, 0, 0.15) 100%
     ),
-    url("../images/boneco_MAV.png") no-repeat 75% center / cover;
+    url("../images/boneco_MAV.webp") no-repeat 75% center / cover;
 }
 
 .home-hero-content {
@@ -734,7 +734,7 @@ body {
   flex-grow: 1; /* Ocupa todo o espaço vertical disponível */
   background:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("../images/contactMe.png") no-repeat center center/cover; /* Altera para o caminho da tua imagem */
+    url("../images/contactMe.webp") no-repeat center center/cover; /* Altera para o caminho da tua imagem */
   display: flex;
   align-items: center;
   justify-content: center;
