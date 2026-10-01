@@ -37,6 +37,6 @@ This project features a bold visual identity with a dark theme, electric green a
 ## Responsiveness
 
 Optimized for a seamless user experience across all device screen sizes:
-* **Desktop**: $> 992\text{px}$
-* **Tablets**: $768\text{px} - 992\text{px}$
-* **Mobile Devices**: $< 768\text{px}$
+* **Desktop**: > 992px
+* **Tablets**: 768px - 992px
+* **Mobile Devices**: < 768px
