@@ -11,15 +11,15 @@ This project features a bold visual identity with a dark theme, electric green a
   * Green divider line featuring an interactive camera icon that smoothly scrolls back to top.
 * **About Section**:
   * Stylized geometric layout with inverted polygon styling.
-  * Centered personal description and Download CV action button.
+  * Centered personal description.
   * Interactive carousel showcasing core concepts and background.
 * **Projects Grid**:
-  * Fully responsive grid layout (**3 columns** on screens $>992\text{px}$, **2 columns** between $768\text{px}$ and $992\text{px}$, and **1 column** on mobile devices).
+  * Fully responsive grid layout (**3 columns** on screens >992px, **2 columns** between 768px and 992px, and **1 column** on mobile devices).
   * Custom image hover effect with zoom scaling, semi-transparent yellow-green overlay, and a centered magnifying glass icon.
   * Built using Bootstrap's `card` and `card-img-top` components.
 * **Skills Overview**:
   * Visual representation of core technical proficiencies (Web Development, Mobile, Multimedia, and Machine Learning).
-* **Internationalization (i18n)**:
+* **Internationalization**:
   * Prepared structure for switching between English and Portuguese versions from the navigation bar.
 
 ---
@@ -29,7 +29,7 @@ This project features a bold visual identity with a dark theme, electric green a
 * **HTML5**: Semantic and accessible markup.
 * **CSS3**: Advanced styling, Flexbox, CSS Grid, media queries, and geometric section clipping (`clip-path`).
 * **Bootstrap 5**: Responsive grid layout, navigation bar, card components, and image carousel.
-* **JavaScript (ES6)**: Dynamic interaction, video playback handling, and language routing.
+* **JavaScript**: Dynamic interaction, video playback handling, and language routing.
 * **FontAwesome**: Scalable vector icons.
 
 ---
