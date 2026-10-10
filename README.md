@@ -40,9 +40,3 @@ Optimized for a seamless user experience across all device screen sizes:
 * **Desktop**: > 992px
 * **Tablets**: 768px - 992px
 * **Mobile Devices**: < 768px
-
----
-
-## ⚠️ Warning
-
-**The Contact Me page does not do anything at the moment, but it can be funtional in a recent future!**
