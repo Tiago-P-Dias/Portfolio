@@ -10,7 +10,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link href="css\main.css" , rel="stylesheet" />
+    <link href="css/main.css" , rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
@@ -24,7 +24,9 @@
   <body class="custom-body">
     <!-- Barra de Navegação -->
     <nav class="navbar navbar-expand-lg custom-navbar">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
         <a class="navbar-brand brand-box" href="about.html">Tiago Dias</a>
 
         <!-- Botão Toggler para dispositivos móveis -->
@@ -81,11 +83,23 @@
                 Projects
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="projects.html">All Projects</a></li>
-                <li><hr class="dropdown-divider"/></li>
-                <li><a class="dropdown-item" href="3dCharacter.html">3D Character</a></li>
-                <li><a class="dropdown-item" href="carRace.html">CarRace</a></li>
-                <li><a class="dropdown-item" href="lunarMining.html">Lunar Mining</a></li>
+                <li>
+                  <a class="dropdown-item" href="projects.html">All Projects</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="3dCharacter.html"
+                    >3D Character</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="carRace.html">CarRace</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="lunarMining.html"
+                    >Lunar Mining</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -138,27 +152,97 @@
       </div>
     </nav>
 
-    <!-- CONTACT ME NÃO MEXER -->
+    <!-- FORMULÁRIO DE CONTACTO -->
     <main class="contact-hero">
-      <div class="container contact-content text-center">
-        <h1 class="contact-title">Contact Me</h1>
+      <div class="container contact-content py-5">
+        <div class="contact-card">
+          <h1 class="contact-title">Contact Me</h1>
+          <p class="contact-lead">
+            Got a collaboration proposal or a question about my projects? Send
+            me a message.
+          </p>
 
-        <form
-          class="contact-form d-flex align-items-center justify-content-center gap-3"
-        >
-          <!-- Campo de Email utilizando form-control do Bootstrap -->
-          <div class="input-wrapper">
-            <input
-              type="email"
-              class="form-control custom-email-input"
-              placeholder="Your Email Here...."
-              required
-            />
-          </div>
+          <form
+            id="contactForm"
+            class="contact-form"
+            action="https://formspree.io/f/mvkzrbnj"
+            method="POST"
+            data-msg-sending="Sending..."
+            data-msg-success="Message sent! Thank you, I will reply soon."
+            data-msg-error="Something went wrong. Please try again in a moment."
+            data-msg-not-configured="The form is not configured yet (missing Formspree ID)."
+          >
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="email"
+                  name="email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="subject"
+                  name="_subject"
+                  placeholder="Opportunity / Question"
+                />
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control custom-input"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
 
-          <!-- Botão Submit Here -->
-          <button type="submit" class="btn submit-btn">Submit<br />Here</button>
-        </form>
+              <!-- Anti-spam (honeypot) -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="website">Do not fill this field</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="_gotcha"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn submit-btn">
+                  Send<br />Message
+                </button>
+              </div>
+            </div>
+            <p
+              id="formStatus"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
       </div>
     </main>
 
@@ -168,8 +252,12 @@
         class="container-fluid d-flex justify-content-between align-items-center"
       >
         <div class="social-icons-bottom">
-          <a href="https://github.com/Tiago-P-Dias"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/Tiago-P-Dias"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/tiago_dias6"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
         <div class="rights-text">© 2026 Copyright : Tiago Dias</div>
       </div>
@@ -187,6 +275,8 @@
       src="https://kit.fontawesome.com/d7149b75da.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- SCRIPT DO FORMULÁRIO DE CONTACTO -->
+    <script src="js/contact.js"></script>
   </body>
 </html>
- 

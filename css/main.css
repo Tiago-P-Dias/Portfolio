@@ -759,18 +759,6 @@ body {
   flex-grow: 1;
 }
 
-.form-control.custom-email-input {
-  /* Customização da classe form-control do Bootstrap para ter só a linha branca */
-  background-color: transparent !important;
-  border: none !important;
-  border-bottom: 2px solid white !important;
-  border-radius: 0 !important;
-  color: white !important;
-  font-size: 1.2rem;
-  padding: 6px 0;
-  box-shadow: none !important; /* Remove o contorno azul ao clicar */
-}
-
 .form-control.custom-email-input::placeholder {
   color: rgb(224, 224, 224) !important;
   opacity: 0.9;
@@ -794,6 +782,107 @@ body {
   background-color: green !important;
   border-color: green !important;
   color: #ffffff !important;
+}
+
+/* FORMULÁRIO DE CONTACTO (nome, email, assunto, mensagem) */
+
+.contact-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid green;
+  border-radius: 6px;
+  padding: 32px 36px;
+  text-align: left;
+}
+
+.contact-card .contact-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact-lead {
+  color: rgb(224, 224, 224);
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.contact-form .form-label {
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+/* Reutiliza o estilo da linha branca para todos os campos do formulário */
+.form-control.custom-input {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid white !important;
+  border-radius: 0 !important;
+  color: white !important;
+  font-size: 1.1rem;
+  padding: 6px 0;
+  box-shadow: none !important;
+}
+
+.form-control.custom-input:focus {
+  border-bottom-color: #31c44a !important;
+}
+
+.form-control.custom-input::placeholder {
+  color: rgb(224, 224, 224) !important;
+  opacity: 0.7;
+}
+
+textarea.form-control.custom-input {
+  border: 2px solid white !important;
+  padding: 8px 10px;
+  resize: vertical;
+  min-height: 130px;
+}
+
+textarea.form-control.custom-input:focus {
+  border-color: #31c44a !important;
+}
+
+/* Campo anti-spam (honeypot): invisível para pessoas */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-status {
+  min-height: 1.4rem;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-status.success {
+  color: #31c44a;
+}
+
+.form-status.error {
+  color: #ff6b6b;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 576px) {
+  .contact-card {
+    padding: 22px 18px;
+  }
+
+  .contact-card .contact-title {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 768px) {
