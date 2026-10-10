@@ -23,7 +23,7 @@
       return;
     }
 
-    if (form.action.indexOf("mvkzrbnj") !== -1) {
+    if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
       setStatus(form.dataset.msgNotConfigured, "error");
       return;
     }
